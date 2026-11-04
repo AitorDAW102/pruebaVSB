@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub Label1_MouseHover(sender As Object, e As EventArgs) Handles Label1.MouseHover
-        Label1.BackColor = Color.Fuchsia
+        Label1.BackColor = Color.Gold
     End Sub
 
     Private Sub Label1_MouseLeave(sender As Object, e As EventArgs) Handles Label1.MouseLeave
