@@ -1,4 +1,5 @@
 ﻿Public Class Form1
+    Dim Tamaño = 9
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "titulo cambiado"
         Me.MaximizeBox = True
@@ -42,7 +43,12 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim Tamaño = Val(TextBox2.Text)
+        Tamaño = Tamaño + 1
+        Label2.Font = New Font(Label2.Font.FontFamily, Tamaño)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Tamaño = Tamaño - 1
         Label2.Font = New Font(Label2.Font.FontFamily, Tamaño)
     End Sub
 End Class

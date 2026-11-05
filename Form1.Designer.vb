@@ -29,7 +29,7 @@ Partial Class Form1
         Button2 = New Button()
         ComboBox1 = New ComboBox()
         Button3 = New Button()
-        TextBox2 = New TextBox()
+        Button4 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -95,15 +95,17 @@ Partial Class Form1
         Button3.Name = "Button3"
         Button3.Size = New Size(75, 44)
         Button3.TabIndex = 7
-        Button3.Text = "Cambiar Tamaño"
+        Button3.Text = "Cambiar Tamaño +"
         Button3.UseVisualStyleBackColor = True
         ' 
-        ' TextBox2
+        ' Button4
         ' 
-        TextBox2.Location = New Point(399, 131)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(75, 23)
-        TextBox2.TabIndex = 8
+        Button4.Location = New Point(498, 71)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(75, 44)
+        Button4.TabIndex = 8
+        Button4.Text = "Cambiar Tamaño -"
+        Button4.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
@@ -111,7 +113,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaptionText
         ClientSize = New Size(784, 361)
-        Controls.Add(TextBox2)
+        Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(ComboBox1)
         Controls.Add(Button2)
@@ -134,5 +136,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button3 As Button
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Button4 As Button
 End Class
