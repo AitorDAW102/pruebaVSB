@@ -27,6 +27,8 @@ Partial Class Form1
         Button1 = New Button()
         Label2 = New Label()
         Button2 = New Button()
+        ComboBox1 = New ComboBox()
+        Button3 = New Button()
         TextBox2 = New TextBox()
         SuspendLayout()
         ' 
@@ -55,7 +57,7 @@ Partial Class Form1
         Button1.Name = "Button1"
         Button1.Size = New Size(130, 44)
         Button1.TabIndex = 2
-        Button1.Text = "CambiarLabel"
+        Button1.Text = "Cambiar Texto"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Label2
@@ -70,20 +72,38 @@ Partial Class Form1
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(222, 71)
+        Button2.Location = New Point(226, 71)
         Button2.Name = "Button2"
         Button2.Size = New Size(130, 44)
         Button2.TabIndex = 4
-        Button2.Text = "CambiarLabel"
+        Button2.Text = "Cambiar Color"
         Button2.UseVisualStyleBackColor = True
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Items.AddRange(New Object() {"Rojo", "Azul", "Dorado", "Verde", "Purpura", "Blanco"})
+        ComboBox1.Location = New Point(226, 131)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(130, 23)
+        ComboBox1.TabIndex = 6
+        ComboBox1.Text = "Color"
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(399, 71)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(75, 44)
+        Button3.TabIndex = 7
+        Button3.Text = "Cambiar Tamaño"
+        Button3.UseVisualStyleBackColor = True
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(222, 131)
+        TextBox2.Location = New Point(399, 131)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(130, 23)
-        TextBox2.TabIndex = 5
-        TextBox2.Text = "Valor Inicial"
+        TextBox2.Size = New Size(75, 23)
+        TextBox2.TabIndex = 8
         ' 
         ' Form1
         ' 
@@ -92,6 +112,8 @@ Partial Class Form1
         BackColor = SystemColors.ActiveCaptionText
         ClientSize = New Size(784, 361)
         Controls.Add(TextBox2)
+        Controls.Add(Button3)
+        Controls.Add(ComboBox1)
         Controls.Add(Button2)
         Controls.Add(Label2)
         Controls.Add(Button1)
@@ -110,5 +132,7 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button3 As Button
     Friend WithEvents TextBox2 As TextBox
 End Class
