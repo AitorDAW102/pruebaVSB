@@ -1,7 +1,6 @@
 ﻿Public Class Form1
     Dim Tamaño = 9
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Text = "titulo cambiado"
         Me.MaximizeBox = True
         Me.MinimizeBox = True
     End Sub
@@ -50,5 +49,17 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Tamaño = Tamaño - 1
         Label2.Font = New Font(Label2.Font.FontFamily, Tamaño)
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If ProgressBar1.Value < ProgressBar1.Maximum Then
+            ProgressBar1.Value = ProgressBar1.Value + ProgressBar1.Step
+        End If
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        If ProgressBar1.Value > ProgressBar1.Minimum Then
+            ProgressBar1.Value = ProgressBar1.Value - ProgressBar1.Step
+        End If
     End Sub
 End Class

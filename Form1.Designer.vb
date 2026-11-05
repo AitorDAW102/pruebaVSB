@@ -30,6 +30,11 @@ Partial Class Form1
         ComboBox1 = New ComboBox()
         Button3 = New Button()
         Button4 = New Button()
+        PictureBox1 = New PictureBox()
+        ProgressBar1 = New ProgressBar()
+        Button5 = New Button()
+        Button6 = New Button()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -100,19 +105,58 @@ Partial Class Form1
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(498, 71)
+        Button4.Location = New Point(399, 119)
         Button4.Name = "Button4"
         Button4.Size = New Size(75, 44)
         Button4.TabIndex = 8
         Button4.Text = "Cambiar Tamaño -"
         Button4.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.veggeta_
+        PictureBox1.Location = New Point(480, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(489, 960)
+        PictureBox1.TabIndex = 9
+        PictureBox1.TabStop = False
+        ' 
+        ' ProgressBar1
+        ' 
+        ProgressBar1.Location = New Point(178, 244)
+        ProgressBar1.Name = "ProgressBar1"
+        ProgressBar1.Size = New Size(178, 42)
+        ProgressBar1.Step = 1
+        ProgressBar1.TabIndex = 10
+        ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(97, 225)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(75, 38)
+        Button5.TabIndex = 11
+        Button5.Text = "Aumentar Progeso"
+        Button5.UseVisualStyleBackColor = True
+        ' 
+        ' Button6
+        ' 
+        Button6.Location = New Point(97, 269)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(75, 38)
+        Button6.TabIndex = 12
+        Button6.Text = "Disminuir Progeso"
+        Button6.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaptionText
-        ClientSize = New Size(784, 361)
+        ClientSize = New Size(1009, 988)
+        Controls.Add(Button6)
+        Controls.Add(Button5)
+        Controls.Add(ProgressBar1)
+        Controls.Add(PictureBox1)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(ComboBox1)
@@ -121,10 +165,9 @@ Partial Class Form1
         Controls.Add(Button1)
         Controls.Add(TextBox1)
         Controls.Add(Label1)
-        MaximizeBox = False
-        MinimizeBox = False
         Name = "Form1"
-        Text = "Form1"
+        Text = "Formulario"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -137,4 +180,8 @@ Partial Class Form1
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class
