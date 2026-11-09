@@ -62,4 +62,11 @@
             ProgressBar1.Value = ProgressBar1.Value - ProgressBar1.Step
         End If
     End Sub
+
+    Private Sub Button7_MouseEnter(sender As Object, e As EventArgs) Handles Button7.MouseEnter
+        Dim rnd As New Random()
+        Dim nuevoX As Integer = rnd.Next(0, Me.ClientSize.Width - Button7.Width)
+        Dim nuevoY As Integer = rnd.Next(0, Me.ClientSize.Height - Button7.Height)
+        Button7.Location = New Point(nuevoX, nuevoY)
+    End Sub
 End Class

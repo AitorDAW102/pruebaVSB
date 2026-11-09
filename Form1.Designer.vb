@@ -34,6 +34,7 @@ Partial Class Form1
         ProgressBar1 = New ProgressBar()
         Button5 = New Button()
         Button6 = New Button()
+        Button7 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -147,12 +148,22 @@ Partial Class Form1
         Button6.Text = "Disminuir Progeso"
         Button6.UseVisualStyleBackColor = True
         ' 
+        ' Button7
+        ' 
+        Button7.Location = New Point(91, 377)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(75, 23)
+        Button7.TabIndex = 13
+        Button7.Text = "Boton"
+        Button7.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaptionText
         ClientSize = New Size(1009, 988)
+        Controls.Add(Button7)
         Controls.Add(Button6)
         Controls.Add(Button5)
         Controls.Add(ProgressBar1)
@@ -184,4 +195,5 @@ Partial Class Form1
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class
